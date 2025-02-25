@@ -8,17 +8,17 @@ function appendNumber(value){
 }
 
 function appendOperator(operator){
-    if (currentInput == "" && operator != ".") {
+    if (currentInput === "") {
         return
     } else {
-        currentInput += operator;
-        display.textContent = currentInput;
+        appendNumber(operator)
     } 
 }
 
 function calculate(){
     try {
         let result = eval(currentInput)
+
         if (!Number.isInteger(result)){
             result = result.toFixed(2)
         } else {
@@ -27,7 +27,7 @@ function calculate(){
         }   
         
     } catch(error) {
-        display.textContent = "Erro"
+        display.textContent = "Algo deu errado"
         currentInput = ""
     }
 }
