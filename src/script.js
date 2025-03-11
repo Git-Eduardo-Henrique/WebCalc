@@ -31,8 +31,3 @@ function calculate(){
         currentInput = ""
     }
 }
-
-function cleardisplay() {
-    currentInput = "";
-    display.textContent = currentInput
-}

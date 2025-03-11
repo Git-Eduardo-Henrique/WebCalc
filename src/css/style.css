@@ -1,15 +1,20 @@
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
 
     background-color: black;
     margin: 0;
 }
 
+.text {
+    color: white;
+}
+
 .calculator {
-    background-color: gray;
+    background-color: #222831;
     padding: 20px;
     border-radius: 20px;
 
@@ -20,12 +25,12 @@ body {
 }
 
 .display {
-    background-color: #333;
+    background-color: black;
     color: white;
 
     padding: 10px;
 
-    font-size: 20px;
+    font-size: 40px;
     border-radius: 10px;
     margin-bottom: 20px;
 
@@ -42,28 +47,27 @@ body {
 
 .button {
     border: none;
-    border-radius: 50%;
+    border-radius: 1rem;
     padding: 20px;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
 .button.dark-gray {
-    background-color: #333;
+    background-color: #393E46;
     color: white;
 }
 
-.button.orange {
-    background-color: orange;
+.button.blue {
+    background-color: #00ADB5;
     color: white;
 }
 
-.button.light-gray {
-    background-color: lightgray;
+.button.white {
+    background-color: #EEEEEE;
     color: black;
 }
 
-.button.wide {
-    grid-column: span 2;
-    border-radius: 50px;
+.button.hide {
+    visibility: hidden;
 }
