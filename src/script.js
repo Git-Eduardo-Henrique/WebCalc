@@ -27,7 +27,7 @@ function calculate(){
         }   
         
     } catch(error) {
-        display.textContent = "Algo deu errado"
+        display.textContent = "ERROR"
         currentInput = ""
     }
 }

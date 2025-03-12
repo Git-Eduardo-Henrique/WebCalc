@@ -7,13 +7,14 @@
 
     <link rel="shortcut icon" href="/src/images/calculator.png" type="image/x-icon">
 
+    <link rel="stylesheet" href="/src/css/calculator.css">
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
     <div class="calculator">
-        <div class="text">
+        <div class="calculator_infos">
             <h1>Coins: 0$</h1>
-            <h2>Press R to restart</h2>
+            <h2>Round 0/20</h2>
         </div>
         
         <div class="display" id="display"></div>
@@ -40,10 +41,10 @@
         </div>
     </div>
 
-    <div class="text">
-        <h2>You need: 0</h2>
-        <h1>0</h1>
-        <h2>Turns: 0</h2>
+    <div class="round_info">
+        <h2 class="round_info_h2">You need:<span>0</span></h2>
+        <h1 class="round_info_h1">0</h1>
+        <h2 class="round_info_h2">Turns:<span>0</span></h2>
     </div>  
 
     <script src="/src/script.js"></script>
