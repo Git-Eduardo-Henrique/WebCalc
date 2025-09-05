@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    min-height: 100vh;
+    background: #000000; /* slate-900 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.game-wrap {
+    max-width: 420px;
+    width: 100%;
+}
+
+/* Calculator */
+.calc-card {
+    border: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    background-color: #222831;
+}
+
+.calc-top {
+    background: #2e3a55;
+    color: #cbd5e1;
+}
+
+.calc-display {
+    background: #000000;
+    color: #e5e7eb;
+    border-radius: .75rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.btn-key {
+    padding: 16px 0;
+    font-size: 1.1rem;
+    border-radius: .75rem;
+
+    background-color: #393E46;
+    color: white;
+}
+
+.btn-operator {
+    font-weight: 600;
+
+    background-color: #00ADB5;
+    color: white;
+}
+
+.btn-equals {
+    font-weight: 700;
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.btn-placeholder {
+    visibility: hidden;
+}
+
+/* Info box */
+.info-card {
+    border: 0;
+    border-radius: 1rem;
+    background-color: #EEEEEE;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+.info-muted {
+    color: #94a3b8;
+    font-size: .9rem;
+}
+
+.info-current {
+    font-size: 2rem;
+    font-weight: 700; 
+    letter-spacing: .5px;
+
+    color: #00ADB5;
+}
